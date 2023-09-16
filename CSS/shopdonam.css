@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif; /*đây là font chữ ko chân*/
+    /*đây là thuộc tính để xét font chữ cho cả website*/
+}
+/*h1:hover{
+    color: aquamarine;
+}
+h1{
+    color: black;
+}*/
+/*
+    Quy tắc 1 khi làm 1 trang web
+    1. Từ ngoài vào trong
+    2. Từ trên xuống dưới
+    3. Từ tổng quan đến chi tiết
+
+*/
+/*
+    Quy tắc 2 khi làm 1 trang web
+    1. Vị trí
+    2. Kích thước ( width: rộng, heightr: cao)
+    3. Màu sắc
+    4. Kiểu dáng ( kiểu chữ, hình tròn, vuông,..)
+
+*/
+#main {
+
+}
+
+#header {
+    height: 30%;
+    background-color: #000;
+}
+
+#nav {
+    display: inline-block;
+    
+}
+
+#nav, .subnav2 { /* dùng dấu , để cho 2 thẻ #nav và .subnav cùng kế thừa 
+                    1 thuộc tính dưới đây*/
+    list-style-type: none; /*dùng để bỏ dấu chấm của thẻ ul*/
+}
+#nav, .subnav1 { /* dùng dấu , để cho 2 thẻ #nav và .subnav cùng kế thừa 
+    1 thuộc tính dưới đây*/
+list-style-type: none; /*dùng để bỏ dấu chấm của thẻ ul*/
+}
+
+#nav > li {
+    display: inline-block; /*cái này dùng để đưa 5 cái li lên cùng 1 dòng*/
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none; /* cái này dùng để bỏ gạch chân mặc định*/
+    line-height: 50px; /*cái này dùng để cho cái hai lai khi bôi đen sẽ bằng
+                          height của header*/
+    padding: 0 24px; /* dùng để giãn khoảng cách giữa các chữ trong id=nav*/
+    display: block;
+}
+
+#nav li:hover .subnav2 {
+    display: block;
+}
+
+#nav li:hover .subnav1 {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav2 li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+#nav > li:hover > a,
+#nav .subnav1 li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav2 {
+    display: none; /*cái này dùng để ẩn thằng con subnav đi*/
+    min-width: 260px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+#nav .subnav1 {
+    display: none; /*cái này dùng để ẩn thằng con subnav đi*/
+    min-width: 260px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+#nav .subnav2 a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav .subnav1 a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+    
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+
+/*-------------------------------------------*/
+
+
+
+  button span {
+    margin: 10px;
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    background-image: url("img/pngtree-sea-__waves-mountains-sunset-nature-landscape-cartoon-illustration-background-picture-image_2249592.jpg");
+}
+.header{
+    
+    width: 100%;
+    height: 8vh;
+    background: #BB0000;
+    text-align: center;
+}
+.dn{
+    
+    top: 90px;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;  
+    font-size: 14px;
+    color: #111;
+    line-height: 1.15;
+}
+#wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.headline{
+    text-align: center;
+    margin: 40px 0px;
+}
+.sa{
+    top: 90px;
+    font-size: 18px;
+    color: #bebebe;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    display: inline-block;
+    color: whitesmoke;
+    font-weight: 600;
+}
+.content{
+    width: 100%;
+    display: flex;
+}
+.content .imgage-item{
+    width: 50%;
+}
+#imgage-item-1{
+    padding-top: 10px;
+    
+}
+ul.products, ul.products2{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products li{
+    display: block;
+    width: 33.333%;
+    /* flex-basis: 25%; */
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.products2 li{
+
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.products li img, ul.products2 li img{
+    max-width: 100%;
+    height: auto;
+}
+ul.products li .product-top, ul.products2 li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.products li .product-top .product-thumb, ul.products2 li .product-top .product-thumb{
+    display: block;
+}
+ul.products li:hover .product-top .product-thumb img, ul.products2 li:hover .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+ul.products li .product-top .product-thumb img, ul.products2 li .product-top .product-thumb img{
+    display: block;
+}
+ul.products li .product-top a.buy-now, ul.products2 li .product-top a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+ul.products li:hover a.buy-now,ul.products2 li:hover a.buy-now{
+    bottom: 0px;
+}
+ul.products li .product-info, ul.products2 li .product-info{
+    
+    padding: 10px 0px;
+}
+ul.products li .product-info a, ul.products2 li .product-info a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+ul.products li .product-info .product-name, ul.products2 li .product-info .product-name {
+    color: #334862;
+    padding: 3px 0px;
+    text-decoration: line-through;
+}
+ul.products li .product-info .product-name2, ul.products2 li .product-info .product-name2 {
+    color: #334862;
+    padding: 3px 0px;
+    
+    
+}
+.slider2{
+    padding-left: 20%;
+}
+
+.sale1 {
+    text-align: right;
+    padding-left: 20%;
+}
+.sale2 {
+    text-transform: uppercase;
+    color: white;
+    background-color: #343a40;
+    text-decoration: none;
+    padding: 6px 10px;
+    display: inline-block;
+    text-align: right;
+}
+
+/*---- Phát ----------------------*/
+.refresh { 
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.refresh-left .refresh-link {
+    width: 53%;
+}
+
+.refresh-right {
+    width: 38%;
+}
+ 
+.refresh-left .refresh-link { 
+    cursor: pointer;
+}
+
+.refresh-left .refresh-link img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 686px;
+    /* height: 100%; */
+    /* display: flex; */
+    /* justify-content: end; */
+}
+
+/* refresh-right */
+.refresh-title {
+    text-transform: capitalize;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: black;
+}
+
+.refresh-sub {
+    font-size: 23px;
+    color: black;
+}
+
+.refresh-img-box {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.refresh-item {
+    width: calc(99%/3);
+}
+
+.refresh-item a img {
+    width: 100%; 
+    height: 274px;
+}
+
+.refresh-price {
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+}
+
+.btn-refresh-box {
+    text-align: right;
+}
+.btn-add-refresh {
+    text-transform: uppercase;
+    color: white;
+    background-color: #343a40;
+    text-decoration: none;
+    padding: 6px 10px;
+    display: inline-block;
+    text-align: right;
+}
+
+
+/*----------------  Thoại  --------------------------*/
+
+#T_SHIRT_wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+ul.T_SHIRT_products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.T_SHIRT_products li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.T_SHIRT_products li img{
+    max-width: 100%;
+    height: auto;
+}
+ul.T_SHIRT_products li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.T_SHIRT_products li .product-top .product-thumb{
+    display: block;
+}
+ul.T_SHIRT_products li:hover .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+ul.T_SHIRT_products li .product-top .product-thumb img{
+    display: block;
+}
+ul.T_SHIRT_products li .product-top a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+ul.T_SHIRT_products li:hover a.buy-now{
+    bottom: 0px;
+}
+ul.T_SHIRT_products li .product-info{
+    
+    padding: 10px 0px;
+}
+ul.T_SHIRT_products li .product-info a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+ul.T_SHIRT_products li .product-info .product-name{
+    color: #334862;
+    padding: 3px 0px;
+    text-decoration: line-through;
+}
+/**-------------------------------------------------------/
+/*    Nhung   */
+#SHIRT_wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+ul.SHIRT_products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.SHIRT_products li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.SHIRT_products li img{
+    max-width: 100%;
+    height: auto;
+}
+ul.T_SHIRT_products li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.SHIRT_products li .product-top .product-thumb{
+    display: block;
+}
+ul.SHIRT_products li:hover .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+ul.SHIRT_products li .product-top .product-thumb img{
+    display: block;
+}
+ul.SHIRT_products li .product-top a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+ul.SHIRT_products li:hover a.buy-now{
+    bottom: 0px;
+}
+ul.SHIRT_products li .product-info{
+    
+    padding: 10px 0px;
+}
+ul.SHIRT_products li .product-info a{
+    display: block;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+ul.SHIRT_products li .product-info .product-name{
+    color: #334862;
+    padding: 3px 0px;
+}
+
+
+
+/*---------------------------------------------------------*/
+#footer {
+    height: 150px;
+    background-color: #000;
+    
+}
+#footer .footer-layout ul{
+    list-style: none;
+}
