@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng nhập</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet"> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <style>
+            
+            
+            #box {  
+                border: 1px solid rgb(200, 200, 200);   
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px; 
+                background: rgba(200, 200, 200, 0.1);   
+                border-radius: 4px; top:50px;
+            }
+            
+            h2 {    
+                text-align:center;  
+                color:#fff;
+            }
+            #header {
+                height: 30%;
+                background-color: #000;
+            }
+
+            #nav {
+                display: inline-block;
+                
+            }
+
+            #nav, .subnav2 { /* dùng dấu , để cho 2 thẻ #nav và .subnav cùng kế thừa 
+                                1 thuộc tính dưới đây*/
+                list-style-type: none; /*dùng để bỏ dấu chấm của thẻ ul*/
+            }
+            #nav, .subnav1 { /* dùng dấu , để cho 2 thẻ #nav và .subnav cùng kế thừa 
+                1 thuộc tính dưới đây*/
+            list-style-type: none; /*dùng để bỏ dấu chấm của thẻ ul*/
+            }
+
+            #nav > li {
+                display: inline-block; /*cái này dùng để đưa 5 cái li lên cùng 1 dòng*/
+            }
+
+            #nav li {
+                position: relative;
+            }
+
+            #nav > li > a {
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+            #nav li a{
+                text-decoration: none; /* cái này dùng để bỏ gạch chân mặc định*/
+                line-height: 50px; /*cái này dùng để cho cái hai lai khi bôi đen sẽ bằng
+                                    height của header*/
+                padding: 0 24px; /* dùng để giãn khoảng cách giữa các chữ trong id=nav*/
+                display: block;
+            }
+
+            #nav li:hover .subnav2 {
+                display: block;
+            }
+
+            #nav li:hover .subnav1 {
+                display: block;
+            }
+
+            #nav > li:hover > a,
+            #nav .subnav2 li:hover a {
+                color: #000;
+                background-color: #ccc;
+            }
+            #nav > li:hover > a,
+            #nav .subnav1 li:hover a {
+                color: #000;
+                background-color: #ccc;
+            }
+
+            #nav .subnav2 {
+                display: none; /*cái này dùng để ẩn thằng con subnav đi*/
+                min-width: 260px;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                
+            }
+            #nav .subnav1 {
+                display: none; /*cái này dùng để ẩn thằng con subnav đi*/
+                min-width: 260px;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                
+            }
+
+            #nav .subnav2 a {
+                color: #000;
+                padding: 0 12px;
+                line-height: 38px;
+            }
+            #nav .subnav1 a {
+                color: #000;
+                padding: 0 12px;
+                line-height: 38px;
+            }
+            #nav .nav-arrow-down {
+                font-size: 14px;
+            }
+
+            #header .search-btn {
+                float: right;
+                padding: 0 21px;
+                
+            }
+
+            #header .search-btn:hover {
+                cursor: pointer;
+                background-color: #f44336;
+            }
+
+            #header .search-icon {
+                color: #fff;
+                font-size: 20px;
+                line-height: 46px;
+            }
+            #footer {
+                height: 150px;
+                background-color: #000;
+                margin-top: 14%;
+                border: 20px;
+            }
+            #footer .footer-layout ul{
+                list-style: none;
+            }
+        </style>
+</head>
+<body>
+    
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li> 
+                    <a href="">BỘ SƯU TẬP</a>
+                    <ul class="subnav1">
+                        <li><a href="">The Style of No Style</a></li>
+                        <li><a href="">Di Sản</a></li>
+                        <li><a href="">Cosmo - Thời trang toàn cầu</a></li>
+                        <li><a href="">Japanese Horror Stories</a></li>
+                        <li><a href="">The Day'a Eye</a></li>
+                        <li><a href="">Y2010 Originals</a></li>
+                        <li><a href="">Nghệ thuật Tối Giản</a></li>
+                        <li><a href="">Đơn giản mà sang</a></li>
+                        <li><a href="">Space</a></li>
+                        <li><a href="">Linh vật Bbuff</a></li>
+                        <li><a href="">Thần Anubis</a></li>
+                    </ul>
+                </li>
+                <li><a href="">SALE MÙA TỰU TRƯỜNG</a></li>
+                <li><a href="">SALE DỌN KHO BALO TÚI</a></li>
+                <li><a href="">MỚI MỞ BÁN</a></li>
+                
+                <li>
+                    <div id="search12">
+                        <form class="form-inline">
+                            <div > 
+                                <input style="margin-top: 7%; margin-right: 70%;" class="form-control mr-sm-2 align-middle" type="search" placeholder="Search" aria-label="Search">
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                
+            
+            </ul>
+            <!--End: Nav-->
+
+            <!--Begin: Search button-->
+            <!-- <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+
+            </div> -->
+            <!--End: search button-->
+        </div>
+
+    <div class="container-fluid"> 
+    <div class="row-fluid"> 
+    <div class="col-md-offset-4 col-md-4" id="box"> 
+    <h2 style="color: #000;">SIGN UP</h2> 
+    <hr> 
+    <form class="form-horizontal" action="" method="get" id="login_form"> 
+        <fieldset> 
+            <div class="form-group"> 
+                <div class="col-md-12"> 
+                    <div class="input-group"> 
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </span> 
+                        <input name="first_name" placeholder="Username" class="form-control" type="text"> 
+                    </div> 
+                </div> 
+            </div>
+            <fieldset> 
+                <div class="form-group"> 
+                    <div class="col-md-12"> 
+                        <div class="input-group"> 
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-envelope"></i>
+                            </span> 
+                            <input name="email" placeholder="Email" class="form-control" type="email"> 
+                        </div> 
+                    </div> 
+                </div> 
+                <fieldset> 
+                    <div class="form-group"> 
+                        <div class="col-md-12"> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-lock"></i>
+                                </span> 
+                                <input name="password" placeholder="Username" class="form-control" type="password"> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <fieldset> 
+                        <div class="form-group"> 
+                            <div class="col-md-12"> 
+                                <div class="input-group"> 
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-lock"></i>
+                                    </span> 
+                                    <input name="Confirm_Password" placeholder="Confirm Password" class="form-control" type="password"> 
+                                </div> 
+                            </div> 
+                        </div>  
+            <div class="form-group"> 
+                <div class="col-md-12"> 
+                    <div class="input-group"> 
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-phone"></i>
+                        </span>
+                        <input name="Phone_Number" placeholder="Phone Number" class="form-control" type="text"> 
+                    </div> 
+                </div> 
+            </div>
+            <div class="form-group"> 
+                <div class="col-md-12"> 
+                    <div class="input-group"> 
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                        </span>
+                        <input name="Address" placeholder="Address" class="form-control" type="text"> 
+                    </div> 
+                </div> 
+            </div>  
+            <div class="form-group"> 
+                <div class="col-md-12">
+                    <button class="btn btn-outline-primary btn-danger"  href="#">Login</button> 
+                   
+                </div> 
+            </div>
+        </fieldset> 
+    </form> 
+    </div> 
+    </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer-layout" style="color: white; align-content: baseline; ">
+            <ul class="p-3 mb-2 bg-black text-white text-center">
+                <li>SỐ ĐIỆN THOẠI: 0353126350</li>
+                <li>EMAIL: thanhle02032003@gmail.com</li>
+                <li>ĐỊA CHỈ: 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh</li>
+               
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

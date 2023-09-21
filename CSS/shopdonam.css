@@ -525,8 +525,13 @@ ul.SHIRT_products li .product-info .product-name{
     color: #334862;
     padding: 3px 0px;
 }
+#icon-user{
+    margin-left: 200px;
 
-
+}
+#search12{
+    margin-left: 200px;
+}
 
 /*---------------------------------------------------------*/
 #footer {
